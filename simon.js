@@ -9,7 +9,9 @@ buttonColors=["red","blue","green","yellow"]
 gamePattern =[]
 userClickedPattern =[]
 level = 0
-$("h1").click(function(){
+$("h2").click(function(){
+	startOver()
+	$("h2").text("Press Here to Restart")
 	$("h1").text("level "+level)
 	nextSequence()
 })
@@ -70,7 +72,7 @@ function checkAnswer(currentLevel){
 	else{
 		console.log("fail")
 		makeSound("wrong")
-		$("h1").text("Game Over, Press here to Restart")
+		$("h1").text("Game Over")
 		$("body").addClass("game-over")
 		setTimeout(function(){
 		$("body").removeClass("game-over")

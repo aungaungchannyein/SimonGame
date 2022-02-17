@@ -10,6 +10,13 @@ body {
   color: #FEF2BF;
 }
 
+#restart{
+  font-family: 'Press Start 2P', cursive;
+  color: #FEF2BF;
+  font-size: 2rem;
+
+}
+
 .container {
   display: block;
   width: 50%;
